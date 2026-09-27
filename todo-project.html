@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>To-Do List Project for Beginners | CodeStart Hub</title>
+
+    <meta name="description" content="Build a simple To-Do List using HTML, CSS and JavaScript. Practice your web development skills with this beginner-friendly project.">
+<meta name="robots" content="index, follow">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<header>
+    <div class="logo">
+        <h1>CodeStart Hub 💻</h1>
+        <p>Learn Coding Step by Step</p>
+    </div>
+</header>
+
+<nav>
+    <a href="index.html">Home</a>
+    <a href="html-tutorial.html">HTML</a>
+    <a href="css-tutorial.html">CSS</a>
+    <a href="javascript-tutorial.html">JavaScript</a>
+    <a href="projects.html">Projects</a>
+    <a href="about.html">About</a>
+    <a href="contact.html">Contact</a>
+</nav>
+
+<main>
+
+<section class="tutorial-page">
+
+    <h2>To-Do List Project</h2>
+
+    <p>
+        A To-Do List is a simple JavaScript project that helps beginners
+        practice HTML, CSS and JavaScript together.
+    </p>
+
+    <h2>What You Will Learn</h2>
+
+    <ul>
+        <li>Creating HTML input fields</li>
+        <li>Adding buttons</li>
+        <li>Using JavaScript events</li>
+        <li>Adding tasks dynamically</li>
+        <li>Practicing basic DOM manipulation</li>
+    </ul>
+
+    <h2>Step 1: Create the HTML</h2>
+
+    <pre><code>&lt;input type="text" id="taskInput"
+placeholder="Enter a task"&gt;
+
+&lt;button onclick="addTask()"&gt;
+Add Task
+&lt;/button&gt;
+
+&lt;ul id="taskList"&gt;&lt;/ul&gt;</code></pre>
+
+    <h2>Step 2: Add JavaScript</h2>
+
+    <p>
+        JavaScript can read the task entered by the user and add it
+        to the list.
+    </p>
+
+    <pre><code>function addTask() {
+
+    let input = document.getElementById("taskInput");
+    let task = input.value;
+
+    if (task !== "") {
+
+        let item = document.createElement("li");
+
+        item.textContent = task;
+
+        document.getElementById("taskList").appendChild(item);
+
+        input.value = "";
+    }
+}</code></pre>
+
+    <h2>Step 3: Improve Your To-Do List</h2>
+
+    <p>
+        After creating the basic version, you can add more features
+        to make your project more useful.
+    </p>
+
+    <ul>
+        <li>Add a delete button</li>
+        <li>Mark completed tasks</li>
+        <li>Add task editing</li>
+        <li>Save tasks using local storage</li>
+        <li>Improve the design with CSS</li>
+    </ul>
+
+    <h2>What Should You Practice Next?</h2>
+
+    <p>
+        Try changing the design and adding new features to your To-Do List.
+        Building small projects is a good way to practice JavaScript.
+    </p>
+
+    <div class="next-box">
+
+        <h3>Keep Building 🚀</h3>
+
+        <p>
+            Explore more beginner-friendly web development projects.
+        </p>
+
+        <a href="projects.html">Back to Projects →</a>
+
+    </div>
+
+</section>
+
+</main>
+
+<footer>
+
+    <div class="footer-content">
+
+        <h3>CodeStart Hub 💻</h3>
+
+        <p>
+            Learn Coding Step by Step with free tutorials and
+            beginner-friendly projects.
+        </p>
+
+        <p class="copyright">
+            © 2026 CodeStart Hub. All Rights Reserved.
+        </p>
+
+        <p>
+            <a href="privacy.html">Privacy Policy</a>
+        </p>
+
+        <p>
+            <a href="terms.html">Terms & Conditions</a>
+        </p>
+        <p>
+            <a href="disclaimer.html">Disclaimer</a>
+        </p>
+
+    </div>
+
+</footer>
+
+</body>
+</html>
