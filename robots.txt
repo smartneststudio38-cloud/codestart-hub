@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+ Sitemap: https://smartneststudio38-cloud.github.io/codestart-hub/sitemap.xml
